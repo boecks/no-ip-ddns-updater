@@ -1,0 +1,8 @@
+version: '3.6'
+
+services:    
+  no-ip-ddns-updater:
+    image: jorkzijlstra/docker-noip:latest
+    container_name: no-ip-ddns-updater
+    env_file: .env_noip
+    restart: always
